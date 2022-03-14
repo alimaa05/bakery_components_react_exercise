@@ -36,8 +36,8 @@ const Cakes = () => {
         }
     ]
 
- // creating a new function that loops through the 'cakes' items 
-//using .map so for every element in the cake array you perfom the following 'cake' function
+ // creating a new function that loops through the 'cakes' array 
+//using .map so for every cake in the array you perfom the following 'cake' function
     const individualCake = cakes.map(cake => {
         // returning the name for every cake in the array
         /* returning the image for every cake element */
@@ -47,9 +47,9 @@ const Cakes = () => {
         // this function also gets all the rating for the each cake in the cake array
 
 
-        // within the ul tag we want to enclose cakeName, ingredient (each ingredient will appear as a bullet point - its enclosed in li tag) and rating 
+        // within the ul tag we want to enclose cakeName, ingredient (each ingredient appears as a bullet point -  enclosed in li tag) and rating 
         // each ul element will have unique key - each ul is a cake from the cakes array
-        
+
         return <div key={cake.cakeName}><p>Cake Name: {cake.cakeName}</p>
             <img src={cake.img} alt={cake.cakeName} width="200"/>
             
