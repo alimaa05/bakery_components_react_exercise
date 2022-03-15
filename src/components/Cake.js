@@ -1,9 +1,9 @@
 
 // importing the file path for images 
-import lemonDrizzle from '/Users/alimaa/Documents/coursework/week_09/day_1/bakery_components_exercise/src/images/lemonDrizzle.jpeg'
-import teaLoaf from '/Users/alimaa/Documents/coursework/week_09/day_1/bakery_components_exercise/src/images/teaLoaf.jpeg'
-import brownie from '/Users/alimaa/Documents/coursework/week_09/day_1/bakery_components_exercise/src/images/brownie.png'
-import carrotCake from '/Users/alimaa/Documents/coursework/week_09/day_1/bakery_components_exercise/src/images/carrotCake.png'
+import lemonDrizzle from '../images/lemonDrizzle.jpeg'
+import teaLoaf from '../images/teaLoaf.jpeg'
+import brownie from '../images/brownie.png'
+import carrotCake from '../images/carrotCake.png'
 
 // creating a function for the cake items
 const Cakes = () => {
@@ -53,7 +53,7 @@ const Cakes = () => {
         return <div key={cake.cakeName}><p>Cake Name: {cake.cakeName}</p>
             <img src={cake.img} alt={cake.cakeName} width="200"/>
             
-        <ul key={cake.cakeName}>Ingredients: {cake.ingredients.map(cakeIngredient => {
+        <ul key={cake.ingredients}>Ingredients: {cake.ingredients.map(cakeIngredient => {
             return <li key={cakeIngredient}>{cakeIngredient}</li>
         })}</ul>
         

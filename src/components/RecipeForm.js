@@ -2,6 +2,7 @@ const RecipeForm = () => {
 
     return (
     <form>
+    <h2>Submit a new recipe</h2>
     <label htmlFor="name">Cake Name: </label>
     <input type="text" name="name"></input>
 
