@@ -15,9 +15,9 @@ const NavBar = () =>{
 
         <nav>
             {/* <a href="#">Home &nbsp;</a> */}
-            <a href="https://www.google.com">Home</a>
-            <a href="https://www.google.com">Recipes</a>
-            <a href="https://www.google.com">Contact</a> 
+            <a href="https://www.google.com">Home &nbsp;</a>
+            <a href="https://www.google.com">Recipes &nbsp;</a>
+            <a href="https://www.google.com">Contact &nbsp;</a> 
             
         </nav>
     )
